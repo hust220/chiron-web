@@ -8,7 +8,7 @@ require('config/config.inc.php');
 	
 ?>
 <?php
-if ($_POST['subject'] && $_POST['body']){
+if (array_key_exists('subject', $_POST) && array_key_exists('body', $_POST) && $_POST['subject'] && $_POST['body']){
 
   $mail_subject=$_POST['subject'];
   $mail_message=$_POST['body'];

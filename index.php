@@ -107,7 +107,7 @@ require('config/functions.inc.php');
 
 			//$harmonicstr = ($harmonic==0) ? "<img src='style/img/no.png'>" : "<img src='style/img/yes.png'>";
 		
-			$haspdb = $row['!ISNULL(fpdb)'];
+			$haspdb = !empty($row['fpdb']);
 			if ($haspdb) {
 				$pdbstr = "<a href='downloadpdb.php?id=$jobid'><img src='style/img/zipped.gif' title='download output pdb' border='0px'> </a>";
 //				$url = "loadPage(\"downloadpdb.php?id=$jobid\")";
@@ -196,7 +196,7 @@ require('config/functions.inc.php');
 
 				//$harmonicstr = ($harmonic==0) ? "<img src='style/img/no.png'>" : "<img src='style/img/yes.png'>";
 		
-				$haspdb = $row['!ISNULL(fpdb)'];
+				$haspdb = !empty($row['fpdb']);
 				if ($haspdb) {
 					$pdbstr = "<a href='downloadpdb.php?id=$jobid'><img src='style/img/zipped.gif' title='download output pdb' border='0px'> </a>";
 //					$url = "loadPage(\"downloadpdb.php?id=$jobid\")";
@@ -336,7 +336,7 @@ require('config/functions.inc.php');
 
 			//$harmonicstr = ($harmonic==0) ? "<img src='style/img/no.png'>" : "<img src='style/img/yes.png'>";
 		
-			$haspdb = $row['!ISNULL(fpdb)'];
+			$haspdb = !empty($row['fpdb']);
 			if ($haspdb) {
 				$pdbstr = "<a href='downloadpdb.php?id=$jobid'><img src='style/img/zipped.gif' title='download output pdb' border='0px'> </a>";
 //				$url = "loadPage(\"downloadpdb.php?id=$jobid\")";
@@ -429,7 +429,7 @@ require('config/functions.inc.php');
 
 				//$harmonicstr = ($harmonic==0) ? "<img src='style/img/no.png'>" : "<img src='style/img/yes.png'>";
 		
-				$haspdb = $row['!ISNULL(fpdb)'];
+				$haspdb = !empty($row['fpdb']);
 				if ($haspdb) {
 					$pdbstr = "<a href='downloadpdb.php?id=$jobid'><img src='style/img/zipped.gif' title='download output pdb' border='0px'> </a>";
 //					$url = "loadPage(\"downloadpdb.php?id=$jobid\")";

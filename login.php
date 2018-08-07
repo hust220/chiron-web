@@ -14,7 +14,8 @@ require('config/config.inc.php');
 		}
 	}
   $filename = 'logasdf';
-  $content = $_SERVER['REMOTE_HOST']." ".$_SERVER['REMOTE_ADDR']." ".date(DATE_RFC822)." ". $_SERVER['HTTP_USER_AGENT']."\n";
+  $REMOST_HOST = array_key_exists('REMOTE_HOST', $_SERVER) ? $_SERVER['REMOTE_HOST'] : gethostbyaddr($_SERVER['REMOTE_ADDR']);
+  $content = $REMOST_HOST." ".$_SERVER['REMOTE_ADDR']." ".date(DATE_RFC822)." ". $_SERVER['HTTP_USER_AGENT']."\n";
   if (is_writable($filename)) {
     if ($handle = fopen($filename, 'a')) {
       fwrite($handle, $content);
@@ -61,7 +62,7 @@ require('config/config.inc.php');
 				include("txt/register.txt");
 			?>
 			<br/>
-			<?php  if ($_SESSION['loginerror'] == '0' ) { #successful registration
+			<?php  if (array_key_exists('loginerror', $_SESSION) && $_SESSION['loginerror'] == '0' ) { #successful registration
 				unset ($_SESSION['loginerror']);
 			?>	
 					<p>
