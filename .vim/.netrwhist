@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/etc/httpd/logs'
+let g:netrw_dirhist_2='/etc/httpd'
+let g:netrw_dirhist_3='/etc/httpd/logs'
+let g:netrw_dirhist_4='/etc/httpd'
+let g:netrw_dirhist_5='/etc/httpd/conf'

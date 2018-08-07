@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>jQuery Modal Dialog Demo</title>
+		<link type="text/css" href="style/js/jQueryUI/themes/base/jquery.ui.all.css" rel="stylesheet" />
+		<script type="text/javascript" src="style/js/jQueryUI/jquery-1.4.2.js"></script>
+		<script type="text/javascript" src="style/js/jQueryUI/external/jquery.bgiframe-2.1.1.js"></script>
+		<script type="text/javascript" src="style/js/jQueryUI/ui/jquery.ui.core.js"></script>
+		<script type="text/javascript" src="style/js/jQueryUI/ui/jquery.ui.widget.js"></script>
+		<script type="text/javascript" src="style/js/jQueryUI/ui/jquery.ui.mouse.js"></script>
+		<!--<script type="text/javascript" src="style/js/jQueryUI/ui/jquery.ui.draggable.js"></script>-->
+		<script type="text/javascript" src="style/js/jQueryUI/ui/jquery.ui.position.js"></script>
+		<!--<script type="text/javascript" src="style/js/jQueryUI/ui/jquery.ui.resizable.js"></script>-->
+		<script type="text/javascript" src="style/js/jQueryUI/ui/jquery.ui.dialog.js"></script>
+		<link type="text/css" href="style/js/jQueryUI/demos/demos.css" rel="stylesheet">
+		<script type="text/javascript">
+			$(function() {
+				$("#dialog-modal").dialog("destroy");
+
+				$("#dialog-modal").dialog({
+					autoOpen: false,
+					height: 140,
+					modal: true
+				});
+			});
+		</script>
+	</head>
+	<body>
+	<div class=demo>
+		<div id="dialog-modal" title="Modal dialog demo">
+			<p>Adding the modal overlay screen makes the dialog look more prominent because it dims out the page content.</p>
+		</div>
+		<div class="hiddenInViewSource" style="padding: 20px;">
+		<p>Sed vel diam id libero <a href="http://example.com">rutrum convallis</a>. Donec aliquet leo vel magna. Phasellus rhoncus faucibus ante. Etiam bibendum, enim faucibus aliquet rhoncus, arcu felis ultricies neque, sit amet auctor elit eros a lectus.</p>
+			<form>
+				<input value="text input" /><br />
+				<input type="checkbox" />checkbox<br />
+				<input type="radio" />radio<br />
+				<select>
+					<option>select</option>
+				</select><br /><br />
+				<textarea>textarea</textarea><br />
+			</form>
+		</div>
+	</div>
+	<a href=# onclick="jQuery('#dialog-modal').dialog('open');return false">Load Dialog</a>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<properties>
+	<!-- General Properties -->
+	<configuration>
+		<config>
+			<name>admin_email</name>
+			<!--<value>ddg@troll.med.unc.edu</value>-->
+			<value>jianopt@ad.unc.edu</value>
+		</config>
+		<config>
+			<name>smtp_host</name>
+			<value>smtp.unc.edu</value>
+		</config>
+		<config>
+			<name>smtp_user</name>
+			<value></value>
+		</config>
+		<config>
+			<name>smtp_password</name>
+			<value></value>
+		</config>
+		<config>
+			<name>db_host</name>
+			<value>localhost</value>
+		</config>
+		<config>
+			<name>db_user</name>
+			<value>chiron_svc</value>
+		</config>
+		<config>
+			<name>db_password</name>
+			<value>first-S3cr3t</value>
+		</config>
+		<config>
+			<name>db_name</name>
+			<value>chiron</value>
+		</config>
+		<config>
+			<name>upload_directory</name>
+			<value>/var/www/html/chiron/uploads</value>
+		</config>
+	</configuration>
+</properties>

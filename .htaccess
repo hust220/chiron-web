@@ -1,0 +1,5 @@
+RewriteEngine On
+LimitRequestBody 0
+LimitRequestBody 2097152
+#RewriteRule ^(http://anonymouse.org/cgi-bin/anon-www.cgi/)(.*) $2 [R]
+#RewriteRule ^(http://www.proxybrowsing.com/browse.php?u=)(.*)&(.*) $2 [R]

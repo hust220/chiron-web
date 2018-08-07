@@ -1,0 +1,34 @@
+<?php
+
+require('config/config.inc.php');
+#require('config/functions.inc.php');
+
+
+$pdbid = $_GET['pdbid'];
+$jobid = $_GET['jobid'];
+$filetype = 'jpeg';
+
+#prepare_results($tableresults, $jobid, $pdbid, $filetype);
+
+$filename = "$pdbid-$jobid.$filetype";
+$query = "SELECT ps FROM $tableresults WHERE jobid='$jobid'";
+$result = mysql_query($query);
+if ($result) {
+    $row = mysql_fetch_array($result);
+    $fp = fopen("download/$filename.tmpgs.gz",'w');
+    fwrite($fp, $row['ps']);
+    fclose($fp);
+    exec("source /home/html/local/env.sh; cd /home/html/chiron; zcat download/$filename.tmpgs.gz |gs -dQUIET -sDEVICE=ppmraw -r300 -sPAPERSIZE=a4 -dBATCH -dNOPAUSE -dTextAlphaBits=4 -dGraphicsAlphaBits=4 -sOutputFile=- - |pamflip -cw|pnmtojpeg &> download/$filename",$output);
+
+?>
+<html>
+    <div id="content">
+        <div id="main_content">
+<?php
+    //echo '<div style="border: 1px solid gray;" align=center>Minimization Summary</div>';
+    echo '<div align=center><img width=720 src="download/'.$pdbid.'-'.$jobid.'.jpeg" border="0px"></div>';
+    echo '<div align=right><table style="font-family:arial; font-size:12px;"><tr><td><a href="filedownload.php?type=jpeg&pdbid='.$pdbid.'&jobid='.$jobid.'"><img src="style/img/download.png" border="0px" ></a></td><td valign=center>Save Image</td></table></div>';
+?>
+        </div>
+    </div>
+</html>

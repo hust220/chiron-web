@@ -1,0 +1,1 @@
+source /home/html/local/env.sh; zcat download/5g2b-23293.jpeg.tmpgs.gz |gs -dQUIET -sDEVICE=ppmraw -r300 -sPAPERSIZE=a4 -dBATCH -dNOPAUSE -dTextAlphaBits=4 -dGraphicsAlphaBits=4 -sOutputFile=- - |pamflip -cw|pnmtojpeg > download/5g2b-23293.jpeg

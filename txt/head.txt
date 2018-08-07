@@ -1,0 +1,47 @@
+<head>
+<title> Chiron : Rapid Protein Energy Minimization Server </title>
+	<style type="text/css" media="all">
+      <!--
+		
+        @import url(style/ifold.css);
+        /*@import url(style/greybox.css);*/
+        @import url(style/lytebox.css);
+		  @import url("/chiron/style/js/jQueryUI/themes/custom-theme/jquery.ui.all.css");
+      -->
+    </style>
+    <script src="/chiron/style/js/login.js" language="javascript" type="text/javascript"></script>
+    <script src="/chiron/style/js/query.js" language="javascript" type="text/javascript"></script>
+    <script src="/chiron/style/js/jetpack.js" language="javascript" type="text/javascript"></script>
+    <script src="/chiron/style/js/lytebox.js" language="javascript" type="text/javascript"></script>
+    <script src="/chiron/style/js/jquery-1.4.2.min.js" language="javascript" type="text/javascript"></script>
+    <script src="/chiron/style/js/jtip.js" language="javascript" type="text/javascript"></script>
+	 <script type="text/javascript" language="javascript" src="/chiron/style/js/jQueryUI/external/jquery.bgiframe-2.1.1.js"></script>
+	 <script type="text/javascript" language="javascript" src="/chiron/style/js/jQueryUI/ui/jquery.ui.core.js"></script>
+	 <script type="text/javascript" language="javascript" src="/chiron/style/js/jQueryUI/ui/jquery.ui.widget.js"></script>
+	 <script type="text/javascript" language="javascript" src="/chiron/style/js/jQueryUI/ui/jquery.ui.mouse.js"></script>
+	 <script type="text/javascript" language="javascript" src="/chiron/style/js/jQueryUI/ui/jquery.ui.position.js"></script>
+	 <script type="text/javascript" language="javascript" src="/chiron/style/js/jQueryUI/ui/jquery.ui.selectable.js"></script>
+	 <script type="text/javascript" language="javascript" src="/chiron/style/js/jQueryUI/ui/jquery.ui.dialog.js"></script>
+	 <script type="text/javascript" language="javascript" src="/chiron/style/js/jQueryUI/ui/jquery.ui.tabs.js"></script>
+	 <script type="text/javascript" language="javascript" src="/chiron/style/js/jQueryUI/ui/jquery.ui.accordion.js"></script>
+	 <script type="text/javascript" language="javascript" src="/chiron/style/js/chiron.jquery.js"></script>
+	 <script type="text/javascript" language="javascript" src="/chiron/style/js/ajaxfileupload.js"></script>
+	 <script type="text/javascript" language="javascript" src="/chiron/style/js/jquery.form.js"></script>
+</head>
+
+<body>
+<div id="main">
+	<div id="header">
+		<!--<div style="float:left"><img src="/chiron/style/img/head.jpg" alt="Eris" border="0" /></div>
+		<div style="float:left"><img src="style/img/pstability.jpg" alt="protein stability prediction" border="0" /></div>
+		<div style="float:right"><a href="http://dokhlab.unc.edu/main.html"><img src="style/img/dokhlab.jpg" alt="Dokholyan Lab" border="0" /></a></div>-->
+		<div class='ui-state-hover ui-corner-all'><img src="style/img/chiron-red.png" width="848" height="48" alt="Chiron" border=0 usemap="#lab" /></div>
+		<map name="lab">
+			<area shape="rect" coords="700, 0, 850, 50" href="http://danger.med.unc.edu" alt="Dokholyan Lab">
+		</map>
+	</div>
+	<div id="meta" class="smallfont">
+	<?php
+		include("txt/userbar.txt");
+	?>
+	</div>

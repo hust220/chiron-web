@@ -1,0 +1,16 @@
+	Welcome to <b>Chiron</b> portal! Please use your username and password to login or sign up for a new account.
+<p>
+	<b>Chiron</b>, named after the Thessalian god of healing, is a protein energy minimization server.
+	<b>Chiron</b> performs rapid energy minimization of protein molecules using
+	discrete molecular dynamics with an all-atom representation for each residue in the protein.
+</p>
+<p>More details are available in the following publications: <br><br>
+<strong>Chiron : Ramachandran, S., Kota, P., Ding, F. and Dokholyan, N. V.,
+<i>PROTEINS: Structure, Function and Bioinformatics,</i> 79: 261-270 (2011)</strong>
+</p>
+
+<strong>Gaia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   : Kota, P., Ding, F., Ramachandran, S. and Dokholyan, N. V.,
+<i>Bioinformatics, in press</i> (2011)</strong>
+<p>
+	Please read the <a href="terms.html"> terms and conditions </a> of using Chiron. Please contact pkota @ email.unc.edu for technical support and comments.
+</p>
